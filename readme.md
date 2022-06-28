@@ -1,1 +1,1 @@
-#Webpage that calculates basic metabolic rate.
+Webpage that calculates basic metabolic rate in PHP.
