@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>BMR Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <div class="banner">
+        <h1>Fitness Stats</h1>
+    </div>
+    </head>
+    <body>
+        <h2>BMR Calculator</h2>
+        <div class="grid">
+        <form id= "BMRfrm" action = "bmr_calc.php" method = "post">
+    
+               <p>   
+                    <label for = "age">AGE</label>
+                    <input type="text" id = "age" name ="age" size="3" style="direction:rtl;"><br>
+               </p>
+
+               <p>
+                    <label for = "sex">SEX</label>
+                    <input type="radio" id = "male" name ="sex" value = "male">
+                    <label for="male">Male</label>
+                    <input type="radio" id = "female" name ="sex" value = "female">
+                    <label for="female">Female</label><br>
+                </p>
+
+                <p>
+                    <label for = "height">HEIGHT</label>
+                    <input type="text" id = "feet" name ="feet" size="1" style="direction:rtl;">
+                    <label for ="feet">ft.</label>
+                    <input type="text" id = "inches" name ="inches" size="2">
+                    <label for="inches">in.</label><br>
+                </p>
+                    <label for = "weight">WEIGHT</label>
+                    <input type="text" id = "weight" name ="weight" size="3" style="direction:rtl;"><br>
+
+                <p>
+                    <p><button class = "button1" onClick="myfunction()" value="submit">Results</button></p>
+
+                </p>
+                
+            
+        </form>
+        <div class="content"><p>Welcome to the Basic Metabolic Calculator. This is used to estimate how many calories you expend in a day. Please start by entering your data below.</p></div>
+    </div>
+        <script>
+            function myfunction(){
+                document.getElementById("BMRfrm").submit();
+            }
+        </script>
+    </body>
+</html>
