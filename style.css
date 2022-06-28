@@ -1,0 +1,90 @@
+.banner{
+    overflow-wrap: break-word;
+    position: absolute;
+    margin: 0;
+    top:0px;
+    left:0px;
+    right: 0px;
+    height:70px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    background-color: #35ac74;
+}
+body{
+    margin-top: 150px;
+    background-color: #121622;
+    color:aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid {
+    position: relative;
+    
+    margin-left:80px; padding:0;
+    display:grid;
+    grid-template-columns: auto minmax(0,1fr);
+    grid-template-areas: "form content";
+
+}
+.form {
+    grid-area: sidebar;
+  }
+  .content {
+    grid-area: content;
+    margin-left: 20px;
+  }
+form{
+    background-color: #5c5ce2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgb(0, 0,0, 0.1);
+    padding:1rem;
+    margin-bottom: 1rem;
+    font-size: larger;
+    font-weight: bold;
+}
+.activityLevel{
+    background-color: #5c5ce2;
+    padding:1rem;
+    width: fit-content;
+    margin-bottom: 1rem;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+h2{
+    margin-left:80px; padding:0;
+    
+}
+
+.bmr_table{
+    padding:0;
+    margin-left: 80px;
+    width: fit-content;
+    font-size: larger;
+    font-weight: bold;
+    margin-left:80px; padding:0;
+    display:grid;
+    grid-template-columns: auto minmax(0,1fr);
+}
+
+
+  .side_par {
+    margin-left: 80px;
+    font-size: 20px;
+  }
+
+  .button1{
+    padding: 1rem;
+    border: none;
+    color: white;
+    display: block;
+    padding: 15px 32px;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    width: 100%;
+    background-color:#35ac74
+  }
